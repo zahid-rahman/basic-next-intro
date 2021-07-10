@@ -27,7 +27,6 @@ export const getStaticProps = async ({ params }) => {
 
     const { id } = params; // comming from context
 
-
     try {
         const response = await axios(`https://jsonplaceholder.typicode.com/users/${id}`)
         const user = response.data
