@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-export const getServerSidePaths = async () => {
+export const getStaticPaths = async () => {
 
     // api link 
     // https://jsonplaceholder.typicode.com/users/
@@ -20,7 +20,7 @@ export const getServerSidePaths = async () => {
 }
 
 
-export const getServerSideProps = async ({ params }) => {
+export const getStaticProps = async ({ params }) => {
 
     // api link 
     // https://jsonplaceholder.typicode.com/users/:id
